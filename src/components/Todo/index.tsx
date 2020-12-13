@@ -27,7 +27,7 @@ export default class Calendar extends VueComponent<Props> {
     e.target['input'].value = '';
   }
 
-  setCheckbox(i: number, checked: boolean) {
+  setCheckbox(i: number, checked: boolean): void {
     const newCheckboxes = [...this.todos]
     newCheckboxes[i].checked = checked;
     this.$store.dispatch('UPDATE_TODOS', {

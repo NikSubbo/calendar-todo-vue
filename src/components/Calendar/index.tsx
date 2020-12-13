@@ -15,10 +15,6 @@ export default class Calendar extends VueComponent<Props> {
     return this.$store.getters.SELECTED_DATE
   }
 
-  get todosLength(): number {
-    return this.$store.getters.TODOS.length
-  }
-
   todosLengthByDate(date: number): number {
     return this.$store.getters.GET_TODOS_LENGTH_BY_DATE(date)
   }
