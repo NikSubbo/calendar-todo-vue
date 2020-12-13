@@ -1,0 +1,44 @@
+.calendarRoot {
+  box-shadow: 0px 2px 23px #EDEDED;
+  border-radius: 6px;
+  margin: 40px 15px 40px 40px;
+  padding: 20px;
+}
+.title {
+  letter-spacing: 0.59375px;
+  color: #6B7897;
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+.daysContainer,
+.datesContainer {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(7, 45px);
+}
+.daysContainer {
+  color: rgba(52, 72, 94, 0.536062);
+  margin-bottom: 20px;
+}
+.datesContainer {
+  grid-template-rows: repeat(5, 35px);
+}
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7C86A2;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.datesContainer div:first-child {
+  grid-column: 2;
+}
+.selected {
+  border-radius: 50%;
+  background: linear-gradient(0deg, #7ED5FC 0%, #90D9FA 100%);
+  color: #FFFFFF;
+}
+.hasTodos {
+  color: #AA3434;
+}

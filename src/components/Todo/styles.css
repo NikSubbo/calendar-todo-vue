@@ -1,0 +1,38 @@
+.todoRoot {
+  box-shadow: 0px 2px 23px #EDEDED;
+  border-radius: 6px;
+  margin: 40px 40px 40px 15px;
+  padding: 20px;
+  width: 315px;
+  height: 251px;
+  overflow-y: scroll;
+}
+.title {
+  letter-spacing: 0.59375px;
+  color: #8C96AB;
+  margin-bottom: 20px;
+}
+.todoItem {
+  display: flex;
+  margin-bottom: 15px;
+}
+.todoItem input {
+  cursor: pointer;
+}
+.todoItem label {
+  cursor: pointer;
+  color: #A2ABBF;
+  margin-left: 20px;
+}
+.addTodo {
+  padding: 7px 24px;
+  background: #FFFFFF;
+  border: 1px solid #D8DCE6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  margin-left: 40px;
+}
+::placeholder { 
+  color: #BFC4CC;
+}
